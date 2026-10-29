@@ -1,0 +1,20 @@
+AI-Based Disease Prediction System — Initial Evaluation Results
+
+**Algorithm:** Random Forest Classifier
+
+**Dataset:** Disease Prediction Using Machine Learning (Kaggle)
+
+**Training dataset after cleaning:** 4,920 records
+
+**Symptom features:** 132
+
+**Disease classes:** 41
+
+**Initial supplied-test-set accuracy:** 97.62% (42 records)
+
+**80/20 validation split:**
+- Training records: 3,936
+- Validation records: 984
+- Validation accuracy: 100.00%
+
+**Limitations:** These are preliminary results on a public dataset. The dataset's representativeness, duplicate patterns, and possible overlap between similar records require further investigation. The model is an academic prototype and is not clinically validated for diagnosis or treatment decisions.

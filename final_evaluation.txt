@@ -1,0 +1,34 @@
+# AI-Based Disease Prediction System — Evaluation Summary
+
+## 1. Model and Dataset
+- **Algorithm:** Random Forest Classifier
+- **Dataset:** Disease Prediction Using Machine Learning
+- **Original training records:** 4,920
+- **Symptom features:** 132
+- **Disease classes:** 41
+
+## 2. Data Cleaning and Duplicate Analysis
+- Missing values after cleaning: 0
+- Completely duplicated training rows: 4,616
+- Unique training rows after removing duplicates: 304
+- Unique symptom patterns associated with multiple disease labels: 0
+
+## 3. Initial Evaluation Results
+- Accuracy on the supplied 42-record test file using the original training rows: 97.62%
+- Accuracy on an 80/20 split of the original training rows: 100.00%
+- Accuracy on an 80/20 split after removing duplicate training rows: 100.00%
+- Accuracy on the supplied 42-record test file after removing duplicate training rows: 100.00%
+
+## 4. Train-Test Overlap
+- Unique training symptom patterns: 304
+- Supplied test records: 42
+- Test symptom patterns also present in training: 41
+- Test symptom patterns not found in training: 1
+
+## 5. Interpretation and Limitations
+The supplied dataset contains extensive duplication. Approximately 93.8% of the original training rows were duplicates. In addition, 41 of the 42 test records shared symptom patterns with the training dataset.
+
+Consequently, the reported accuracy values may overestimate performance on genuinely new symptom combinations. The test set is small, and these results do not establish clinical validity or real-world diagnostic accuracy.
+
+## 6. Conclusion
+A working educational prototype was developed using a Random Forest classifier and a Streamlit interface. Further evaluation on a larger, independent, representative dataset is required before any claims about real-world performance can be made. The system is not intended for medical diagnosis or treatment decisions.
